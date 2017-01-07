@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>freeShop</title>
-	<meta name="description" content="freeShop is an open source homebrew eShop alternative for the Nintendo 3DS. It allows you to browse and install titles you own utilizing title keys.">
-	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
-	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-	<![endif]-->
-</head>
+---
+layout: index
+---
 
-<body>
 <div class="text-center">
 	<div>
 		<img src="img/freeshop.png" />
@@ -35,8 +23,20 @@
 	</div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+{% include pagination.html %}
+
+{% for post in paginator.posts %}
+<article class="post">
+    <img class="post-thumb" src="{{ post.image }}" />
+    <h2><a href="{{ post.url }}">{{ post.title }}</a> <small class="date">{{ post.date | date: "%B %e, %Y" }}</small></h2>
+    <div class="entry">
+    	{% if post.description %}
+			{{ post.description }}
+    	{% else %}
+        	{{ post.content | strip_html | truncatewords:60}} <a href="{{ post.url }}" class="read-more">Read More &raquo;</a>
+    	{% endif %}
+    </div>
+</article>
+{% endfor %}
+
+{% include pagination.html %}

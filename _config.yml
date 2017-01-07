@@ -1,0 +1,22 @@
+name: freeShop
+description: freeShop is an open source homebrew eShop alternative for the Nintendo 3DS. It allows you to browse and install titles you own utilizing title keys.
+url: https://freeshop.pw
+enforce_ssl: freeshop.pw
+author: Thomas Edvalson
+avatar: https://avatars2.githubusercontent.com/u/383999
+
+encoding: utf-8
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+paginate: 10
+paginate_path: "/page/:num/"
+
+gems:
+- jekyll-paginate
+
+exclude:
+- README.md
+- LICENSE
+- CNAME
