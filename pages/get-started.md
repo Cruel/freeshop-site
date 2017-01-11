@@ -8,8 +8,8 @@ permalink: /get-started/
 
 ## Installation
 
-1. First, make sure your 3DS can install and launch homebrew software. If you have a stock system and cannot, follow the guide: [https://3ds.guide/](https://3ds.guide/)
-2. The following 3DS software is recommended for freeShop usage and setup:
+1. First, make sure your 3DS can install and launch homebrew software with a CFW. If you have a stock system and cannot, follow the guide: [https://3ds.guide/](https://3ds.guide/)
+2. If you followed the guide, you likely have this software already, but the following 3DS software is recommended for freeShop usage and setup:
     - [Luma3DS](https://github.com/AuroraWright/Luma3DS/releases)
     - [FBI](https://github.com/Steveice10/FBI/releases) for an installer
     - [ftpd](https://github.com/mtheall/ftpd/releases) for transfering files to the SD card
@@ -27,7 +27,7 @@ permalink: /get-started/
 ## Initial Setup
 
 1. Launching freeShop for first time will create all necessary files and directories on the SD card. It will inform you that no [keys are found. <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>](/img/screenshots/1.png){: data-featherlight=""}
-2. You need a title key file (commonly named **encTitleKeys.bin**). You can dump the keys of installed tickets on a 3DS console using the following steps:
+2. You need a title key file (commonly named **encTitleKeys.bin**). To generate this file yourself, you can dump the keys of installed tickets on a 3DS console using the following steps:
     1. Boot up Decrypt9.
     2. Go to "Ticket/Titlekey Options"
     3. Go to "Titlekey Dump" (either SysNAND or EmuNAND, whichever you use)

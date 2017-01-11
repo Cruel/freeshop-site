@@ -9,7 +9,7 @@ permalink: /faqs/
 Yes. Luma3DS is recommended.
 
 ### Is there a 3DSX version?
-No, and there won't be one. The elevated permission required become complicate to support over multiple FW versions.
+No, and there won't be one. The elevated permissions required are complicated to support over multiple FW versions.
 
 ### Why are games missing? They're on the eShop.
 
