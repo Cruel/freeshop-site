@@ -1,0 +1,60 @@
+body {
+    padding-bottom: 80px;
+}
+
+#logo {
+    margin: 5px 0;
+}
+#pages #logo {
+    display: inline-block;
+}
+#pages #logo img {
+    height: 70px;
+}
+#pages #download {
+    margin: 20px 0 0 15px;
+}
+
+#nav {
+    display: inline-block;
+}
+#index #nav {
+    margin: 10px 0;
+}
+#pages #nav {
+    /*margin: 5px 0;*/
+}
+#nav .active a {
+    background-color: transparent;
+    color: #AAA;
+}
+
+#screenshots {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #CCC;
+}
+#screenshots img {
+    transition: all 0.5s;
+    outline: 4px solid transparent;
+    opacity: 1.0;
+    margin: 3px 0;
+}
+#screenshots img:hover {
+    outline: 4px solid #AAA;
+    background-color: #AAA;
+    opacity: 0.8;
+}
+.featherlight-content {
+    background-color: #999 !important;
+}
+
+.title {
+    padding: 20px 0;
+    margin-top: 2px;
+    background-color: #EEE;
+}
+
+.container {
+    max-width: 750px;
+}

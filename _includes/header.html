@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="{{ site.author }}" />
-    <meta name="description" content="{% if page.description %}{{ page.description | truncatewords: 200 | strip_newlines | escape_once }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description | truncatewords: 200 | strip_newlines | escape_once }} {{ site.description }}{% else %}{{ site.description }}{% endif %}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.name }}" />
     {% if page.image %}<meta property="og:image" content="{{ site.url }}{{ page.image }}" />{% endif %}
     {% if page.twitter_card_image %}<meta name="twitter:image" content="{{ site.url }}/assets/{{ page.twitter_card_image }}" />{% endif %}
@@ -14,9 +14,10 @@
     <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.name }}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap-anchor.min.css">
+    <link rel="stylesheet" href="/css/featherlight.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	<![endif]-->
