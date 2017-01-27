@@ -58,3 +58,12 @@ body {
 .container {
     max-width: 750px;
 }
+
+.post-meta {
+    display: block;
+    text-align: right;
+}
+.smword {
+    font-size: 80%;
+    color: #999;
+}
